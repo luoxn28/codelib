@@ -1,3 +1,5 @@
+package creative_pattern;
+
 /**
  * 简单工厂模式
  *

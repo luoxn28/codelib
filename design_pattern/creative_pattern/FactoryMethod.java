@@ -1,3 +1,5 @@
+package creative_pattern;
+
 /**
  * 工厂方法
  */

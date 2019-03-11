@@ -1,3 +1,5 @@
+package creative_pattern;
+
 /**
  * 抽象工厂
  */
