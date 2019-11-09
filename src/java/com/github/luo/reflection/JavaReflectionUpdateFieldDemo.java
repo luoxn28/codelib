@@ -37,7 +37,7 @@ public class JavaReflectionUpdateFieldDemo {
 //        ReflectionUtils.setField(fssField, demo, "finalStaticString2");
 
         System.out.println(demo.s + " " + demo.ss + " "  + demo.fs + " " + demo.fss);
-        // 由于final变量在使用的地方会按照常亮处理，所以上面一行代码的 demo.fs 实际在编译完成之后就提换成了 "finalString"，所以要查看最新的 demo.fs值，可以通过反射获取。
+        // 由于final变量在使用的地方会按照常量处理，所以上面一行代码的 demo.fs 实际在编译完成之后就提换成了 "finalString"，所以要查看最新的 demo.fs值，可以通过反射获取。
         System.out.println(demo.s + " " + demo.ss + " "  + fsField.get(demo) + " " + demo.fss);
 
         Field modifiers = ReflectionUtils.findField(fssField.getClass(), "modifiers");
